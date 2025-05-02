@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Desert Garden</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Logo.png" type="image/png">
+</head>
+
+<body>
+<header>
+    <div style="display: flex; align-items: center; justify-content: center;">
+        <img src="Logo.png" alt="Smart Desert Garden Logo" style="height: 50px; margin-right: 20px;">
+        <h1>Smart Desert Garden</h1>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#overview">Project Overview</a></li>
+            <li><a href="#features">Key Features</a></li>
+            <li><a href="#guide">Step-by-Step Guide</a></li>
+            <li><a href="#faq">FAQs</a></li>
+            <li><a href="#calculator">Cost Calculator</a></li>
+	    <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdtjKMzuEV53o1XYqPDzEPnM_lL45IO6EHqYtSffyCIwsy-Hg/viewform?usp=preview">Feedback & Suggestions</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="hero">
+    <div class="hero-content">
+        <h1>Blooming Innovation: Smart Desert Garden</h1>
+        <p>Discover how to build a sustainable, solar-powered garden that thrives in desert environments, conserving water and embracing renewable energy.</p>
+        <a href="smart-desert-garden-guide.pdf" class="get-started-btn" download="Smart Desert Garden Guide">Get Started</a>
+    </div>
+</section>
+
+    <section id="overview" class="content-section">
+        <h2>Project Overview: A Sustainable Solution</h2>
+        <p>The Smart Desert Garden is an innovative project demonstrating a sustainable approach to gardening in arid climates. We emphasize <strong>sustainability</strong>, technological <strong>innovation</strong>, and the power of <strong>renewable energy</strong>. Our focus is on intelligent <strong>water conservation</strong> and efficient <strong>solar-powered automation</strong>, specifically designed for the challenges of desert environments. This project utilizes an <strong>Arduino Pro Mini</strong> for its core automation capabilities.</p>
+    </section>
+
+    <section id="features" class="content-section">
+        <h2>Smart by Design: Explore the Core Elements</h2>
+        <div class="features-grid">
+            <div class="feature">
+                <h3>Arduino Pro Mini Automation</h3>
+                <p>Intelligent control powered by the compact and cost-effective <strong>Arduino Pro Mini</strong>.</p>
+            </div>
+            <div class="feature">
+                <h3>Solar-Powered Drip Irrigation</h3>
+                <p>Efficient and eco-friendly drip irrigation system powered entirely by a sustainable <strong>solar panel</strong>, delivering water precisely where it's needed.</p>
+            </div>
+            <div class="feature">
+                <h3>Smart Soil Moisture Sensors</h3>
+                <p>Real-time monitoring with soil moisture sensors ensures optimal hydration, preventing water waste by automating irrigation based on actual needs.</p>
+            </div>
+            <div class="feature">
+                <h3>Recycled Materials</h3>
+                <p>Committed to environmental responsibility by prioritizing the use of <strong>recycled materials</strong> in the garden's construction, reducing our ecological footprint.</p>
+            </div>
+            <div class="feature">
+                <h3>Budget-Friendly</h3>
+                <p>Achieve a functional smart garden for as low as <strong>100 AED</strong> by embracing DIY techniques and cost-saving strategies, leveraging the affordability of components like the <strong>Arduino Pro Mini</strong>.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="guide" class="content-section">
+        <h2>Build Your Own: A Simple Guide</h2>
+        <div class="materials">
+            <h3>Materials You'll Need:</h3>
+            <ul>
+                <li><strong>Arduino Pro Mini</strong></li>
+                <li>FTDI Adapter (for programming the Pro Mini)</li>
+                <li>Soil moisture sensor(s)</li>
+                <li>Small solar panel</li>
+                <li>Water pump (low voltage)</li>
+                <li>Tubing for drip irrigation</li>
+                <li>Recycled containers</li>
+                <li>Wires and connectors</li>
+            </ul>
+        </div>
+        <div class="assembly">
+            <h3>Assembly Instructions:</h3>
+            <ol>
+                <li><strong>Prepare the Garden Bed:</strong> Set up your recycled containers.</li>
+                <li><strong>Install the Soil Moisture Sensors:</strong> Place sensors in the soil.</li>
+                <li><strong>Assemble the Drip Irrigation System:</strong> Connect tubing and emitters.</li>
+                <li><strong>Connect the Water Pump to the Solar Panel:</strong> Wire the pump to the solar power source (consider a charge controller and battery for consistent power).</li>
+                <li><strong>Wire the Sensors and Pump to the Arduino Pro Mini:</strong> Connect the components to the microcontroller.</li>
+                <li><strong>Program the Arduino Pro Mini:</strong> Use an FTDI adapter to connect to your computer and upload code.</li>
+                <li><strong>Test Your Smart Garden:</strong> Observe and adjust as needed.</li>
+            </ol>
+            <p>Embrace the use of <strong>affordable and recycled components</strong>, including the cost-effective <strong>Arduino Pro Mini</strong>, to minimize costs and environmental impact.</p>
+        </div>
+    </section>
+
+    <section id="advantages-disadvantages" class="content-section">
+        <h2>Microcontroller Options: Pros and Cons</h2>
+        <div class="microcontroller-comparison">
+            <div class="comparison-item">
+                <h3>Arduino Pro Mini</h3>
+                <h4>Advantages:</h4>
+                <ul>
+                    <li><strong>Lower Cost:</strong> Generally less expensive than the Wemos D1 Mini.</li>
+                    <li><strong>Compact Size:</strong> Small form factor, ideal for embedding in projects with limited space.</li>
+                    <li><strong>Low Power Consumption:</strong> Can be advantageous for battery-powered and solar-powered applications.</li>
+                </ul>
+                <h4>Disadvantages:</h4>
+                <ul>
+                    <li><strong>No Integrated WiFi:</strong> Requires a separate WiFi module (like ESP8266) for wireless connectivity, increasing complexity and potentially cost.</li>
+                    <li><strong>No Built-in USB:</strong> Requires an FTDI adapter for programming.</li>
+                    <li><strong>Fewer Built-in Pins:</strong> May have fewer readily accessible GPIO pins compared to the Wemos D1 Mini.</li>
+                </ul>
+            </div>
+            <div class="comparison-item">
+                <h3>Wemos D1 Mini ESP8266</h3>
+                <h4>Advantages:</h4>
+                <ul>
+                    <li><strong>Integrated WiFi:</strong> Built-in ESP8266 chip provides easy WiFi connectivity for IoT applications.</li>
+                    <li><strong>Built-in USB:</strong> Simplifies programming and power.</li>
+                    <li><strong>More Built-in Features:</strong> Often includes more flash memory and processing power than the basic Pro Mini.</li>
+                    <li><strong>Easy Integration with Cloud Services:</strong> Well-suited for projects that need to connect to the internet.</li>
+                </ul>
+                <h4>Disadvantages:</h4>
+                <ul>
+                    <li><strong>Higher Cost:</strong> Generally more expensive than the Arduino Pro Mini.</li>
+                    <li><strong>Larger Size:</strong> Slightly larger footprint compared to the Pro Mini.</li>
+                    <li><strong>Potentially Higher Power Consumption with WiFi Active:</strong> While efficient, WiFi usage can increase power draw.</li>
+                </ul>
+            </div>
+            <p>For this Smart Desert Garden project, we've opted for the <strong>Arduino Pro Mini</strong> to emphasize cost-effectiveness and simplicity for the core automation tasks. If remote monitoring or control is desired in the future, a separate WiFi module can be added.</p>
+        </div>
+    </section>
+
+    <section id="faq" class="content-section">
+        <h2>Explore & Calculate: Get Involved</h2>
+<div class="faq-section">
+    <h3>Frequently Asked Questions</h3>
+    <div class="faq-item">
+        <button class="faq-question">Can a solar panel work indoors?</button>
+        <div class="faq-answer">Generally less efficiently. Direct sunlight is optimal for solar panel performance. Indoor lighting provides significantly less energy.</div>
+    </div>
+    <div class="faq-item">
+        <button class="faq-question">What are the benefits of using a solar-powered water pump?</button>
+        <div class="faq-answer">Reduced electricity costs, environmentally friendly as it uses renewable energy, and suitable for remote locations without easy access to grid power.</div>
+    </div>
+    <div class="faq-item">
+        <button class="faq-question">What makes a garden "smart"?</button>
+        <div class="faq-answer">A "smart" garden uses sensors (like soil moisture sensors) and automation (controlled by a microcontroller like the Arduino Pro Mini) to monitor conditions and automatically adjust things like watering based on the needs of the plants. This helps optimize resource use and plant health.</div>
+    </div>
+    <div class="faq-item">
+        <button class="faq-question">Why is this garden specifically designed for desert environments?</button>
+        <div class="faq-answer">This design prioritizes water conservation, which is crucial in arid climates. Features like drip irrigation and smart sensors ensure water is delivered efficiently and only when needed, minimizing waste. The use of solar power also aligns with the abundance of sunlight in desert regions, promoting a sustainable solution.</div>
+    </div>
+    <div class="faq-item">
+        <button class="faq-question">Can this system be adapted for other climates?</button>
+        <div class="faq-answer">Yes, the core principles of sensor-based automation and efficient watering can be adapted for other climates. However, you might need to adjust the watering schedules, plant choices, and potentially the power source depending on the specific environmental conditions.</div>
+    </div>
+    <div class="faq-item">
+        <button class="faq-question">What are the long-term benefits of using a smart desert garden?</button>
+        <div class="faq-answer">Long-term benefits include reduced water consumption, lower energy costs (if relying on solar), healthier plant growth due to consistent and appropriate watering, and a more sustainable gardening practice. It can also save you time and effort in manual watering.</div>
+    </div>
+    <div class="faq-item">
+        <button class="faq-question">Is prior electronics or programming experience required to build this?</button>
+        <div class="faq-answer">While some basic understanding of electronics and programming (for the Arduino) can be helpful, this project is designed to be accessible to beginners. The step-by-step guide aims to provide clear instructions, and there are many online resources available to help you learn the basics as you go. The cost-effective Arduino Pro Mini also encourages experimentation without a large initial investment.</div>
+    </div>
+    <div class="faq-item">
+        <button class="faq-question">How much time commitment is involved in maintaining the garden once it's set up?</button>
+        <div class="faq-answer">Once the smart garden is set up, the time commitment for regular maintenance is significantly reduced compared to traditional gardening. The automated watering system takes care of a major task. You'll still need to monitor plant health, replenish water reservoirs, and occasionally check the system components, but the daily effort should be minimal.</div>
+    </div>
+</div><div id="calculator">
+    <h3>Cost Calculator</h3>
+    <p>Estimate your project expenses by selecting the components below.</p>
+
+    <div class="calculator-item">
+        <label for="arduino-type">Arduino Board:</label>
+        <select id="arduino-type">
+            <option value="pro-mini">Arduino Pro Mini (Approx. 20 AED)</option>
+            <option value="wemos-d1-mini">Wemos D1 Mini (Optional for WiFi - Approx. 30 AED)</option>
+        </select>
+    </div>
+
+    <div class="calculator-item" style="margin-left: 20px;">
+        <label for="ftdi-adapter" style="font-weight: normal;">
+            <input type="checkbox" id="ftdi-adapter"> FTDI Adapter (for Pro Mini) (Approx. 10 AED)
+        </label>
+    </div>
+
+    <div class="calculator-item">
+        <label for="soil-sensor">Soil Moisture Sensor:</label>
+        <select id="soil-sensor">
+            <option value="basic">Basic Sensor (Approx. 10 AED)</option>
+            <option value="digital">Digital Sensor (More Reliable - Approx. 30 AED)</option>
+        </select>
+    </div>
+
+    <div class="calculator-item">
+        <label for="solar-panel">Solar Panel:</label>
+        <select id="solar-panel">
+            <option value="small">Small (5W - Approx. 30 AED)</option>
+            <option value="medium">Medium (10W - Approx. 60 AED)</option>
+        </select>
+    </div>
+
+    <div class="calculator-item">
+        <label for="water-pump">Water Pump:</label>
+        <select id="water-pump">
+            <option value="mini">Mini Pump (Approx. 20 AED)</option>
+            <option value="submersible">Submersible Pump (Approx. 35 AED)</option>
+        </select>
+    </div>
+
+    <div class="calculator-item">
+        <label for="tubing-length">Drip Irrigation Tubing (Length):</label>
+        <select id="tubing-length">
+            <option value="5">5 Meters (Approx. 20 AED)</option>
+            <option value="10">10 Meters (Approx. 30 AED)</option>
+            <option value="15">15 Meters (Approx. 40 AED)</option>
+        </select>
+    </div>
+
+    <div class="calculator-item">
+        <label for="emitters-number">Drip Emitters (Number):</label>
+        <select id="emitters-number">
+            <option value="5">Pack of 5 (Approx. 10 AED)</option>
+            <option value="10">Pack of 10 (Approx. 18 AED)</option>
+            <option value="20">Pack of 20 (Approx. 30 AED)</option>
+        </select>
+    </div>
+
+    <div class="calculator-item">
+        <label for="water-reservoir">Water Reservoir:</label>
+        <select id="water-reservoir">
+            <option value="recycled">Recycled Container (Approx. 0 AED)</option>
+            <option value="small-new">Small New Reservoir (Approx. 25 AED)</option>
+            <option value="medium-new">Medium New Reservoir (Approx. 40 AED)</option>
+        </select>
+    </div>
+
+    <div class="calculator-item">
+        <label for="wires-number">Wires/Connectors (Number):</label>
+        <select id="wires-number">
+            <option value="10">Pack of 10 (Approx. 10 AED)</option>
+            <option value="20">Pack of 20 (Approx. 18 AED)</option>
+        </select>
+    </div>
+
+    <div class="calculator-total">
+        <h3>Estimated Total Cost: <span id="total-cost">0 AED</span></h3>
+    </div>
+</div>
+        </div>
+
+    <footer>
+        <p>&copy; 2025 Smart Desert Garden</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
